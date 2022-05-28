@@ -15,6 +15,9 @@ app.set('view engine' , 'ejs');
 
 app.use('/',home);
 
+// __dirname => C:\Users\MINI\OneDrive\바탕 화면\GitHub\backend\app
+app.use(express.static(`${__dirname}/src/public`));
+
 module.exports = app;
 
 // app.listen(PORT, function(){
